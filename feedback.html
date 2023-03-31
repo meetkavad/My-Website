@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+    <body >
+        <h2> Write your Message to Meet:</h2><br>
+        <form action="mailto:meetkavad10@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+         
+         <fieldset>
+            <legend>ABOUT YOU</legend>
+            <label for="myname">NAME</label><br>
+            <input type="text" id="myname" name="name"  autofocus required>
+            <br> 
+            <label for="myemail">E-MAIL</label><br>
+            <input type="email" id="myemail" name="email"required><br>
+
+            <label for="years">College-Year</label><br>
+            <input list="year" required>
+            <datalist id="year">
+                <option value="first">
+                <option value="second">
+                <option value="third">
+                <option value="fourth">
+                <option value="none">
+            </datalist>
+         </fieldset>
+         <p>I Love Watching IPL, Do You?</p>
+         <label>Which is your favourite IPL team?</label><br>
+         <input  list="ipl" required>
+         <datalist id="ipl">
+         <option value="MI">
+        <option value="CSK">
+        <option value="RCB">
+        <option value="KKR">
+        <option value="DC">
+        <option value="PBKS">
+         <option value="GT">
+        <option value="LSG">
+        <option value="RR">
+        <option value="SRH">
+        <option value="dont watch it!"></option>
+        </datalist>
+
+            <br><br>
+            <p>Message:</p>
+            <textarea name ="Message" rows="10" cols="50"></textarea><br>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">you agree our <input type ="button" onclick="alert('there are none....just click it!!')" value="terms and conditions"></label><br>
+<br><br>
+            <input type="reset" > &nbsp; <input type="submit" >
+
+        
+            
+        </form>
+
+    </body>
+</html>
